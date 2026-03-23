@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dishes Cafe • Authentic Indian Cuisine</title>
+  <style>
+    :root {
+      --gold: #d4a017;
+      --dark: #1a0f00;
+      --warm-bg: #2c1a00;
+      --text: #f5e9d4;
+      --accent: #e67e22;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, var(--warm-bg), #3d2200);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 30px;
+      background: rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      color: var(--gold);
+      text-shadow: 0 0 20px rgba(212,160,23,0.7);
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    header .tag {
+      font-size: 1.5rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 1.4rem;
+    }
+
+    .intro span {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 0;
+    }
+
+    .dish-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--gold);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .dish-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 48px rgba(212,160,23,0.25);
+      border-color: var(--accent);
+    }
+
+    .dish-card h3 {
+      background: var(--dark);
+      color: var(--gold);
+      padding: 16px;
+      text-align: center;
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .description {
+      padding: 20px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .hero-menu {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+
+    .hero-menu h2 {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 20px;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .offer {
+      background: linear-gradient(135deg, #b8860b, #d4a017);
+      color: #111;
+      text-align: center;
+      padding: 30px 20px;
+      margin: 50px 0;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    .offer h2 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+    }
+
+    .offer .highlight {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .call {
+      font-size: 1.8rem;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .call a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.6);
+      font-size: 1.1rem;
+      border-top: 1px solid var(--gold);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.8rem; }
+      .hero-menu h2 { font-size: 2.4rem; }
+      .offer h2 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MY DISHES CAFE</h1>
+      <div class="tag">Authentic Indian Flavors • Freshly Prepared</div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      Introducing our <span>NEW MENU</span><br>
+      TRY OUR DELICIOUS NEW INDIAN DISHES
+    </div>
+
+    <div class="hero-menu">
+      <h2>Featured Dishes</h2>
+    </div>
+
+    <div class="menu-grid">
+      <div class="dish-card">
+        <h3>Paneer Tikka</h3>
+        <div class="description">
+          Succulent paneer cubes marinated in spiced yogurt and grilled to perfection. Smoky, tangy, irresistible.
+        </div>
+      </div>
+
+      <div class="dish-card">
+        <h3>Chicken Chettinad</h3>
+        <div class="description">
+          Fiery South Indian chicken curry with freshly ground spices, curry leaves, and coconut — bold & aromatic.
+        </div>
+      </div>
+
+      <div class="dish-card">
+        <h3>Prawn Masala</h3>
+        <div class="description">
+          Juicy prawns simmered in rich onion-tomato masala with coastal spices. Perfect seafood indulgence.
+        </div>
+      </div>
+
+      <div class="dish-card">
+        <h3>Masala Dosa</h3>
+        <div class="description">
+          Crispy golden dosa stuffed with spiced potato masala, served with sambar, chutneys & gunpowder.
+        </div>
+      </div>
+    </div>
+
+    <div class="offer">
+      <h2>Special Launch Offer</h2>
+      <div class="highlight">10% OFF</div>
+      <div class="call">CALL NOW: <a href="tel:1234567890">123-456-7890</a></div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 My Dishes Cafe • Come hungry, leave happy!
+  </footer>
+
+</body>
+</html>
